@@ -43,6 +43,34 @@ a {
        width: 1170px;
      }
    }
+
+   /* Start Components */
+   .title {
+       width: 38%;
+       text-align: center;
+       margin: 0 auto 70px;
+   }
+   @media (max-width: 991px) {
+    .title {
+       width: 100%;
+       padding: 0 20px;
+     }
+   }
+   .title h2 {
+       font-size: 45px;
+       font-weight: 800;
+       text-transform: capitalize;
+       margin-bottom: 15px;
+   }
+   @media (max-width: 500px) {
+    .title h2 {
+       font-size: 36px;
+     }
+   }
+   .title p {
+       line-height: 1.7;
+   }
+   /* End Components */
 /* End Global Roles */
 /* Start Header */
 header {
@@ -644,3 +672,158 @@ header .nav li:last-child a {
    background-color: #ff9f66;
 }
 /* End Video */
+/* Start Courses */
+.courses {
+   padding-top: 100px;
+   padding-bottom: 80px;
+   position: relative;
+}
+.courses > img:nth-child(1) {
+   width: 30px;
+   transform: rotate(270deg);
+   position: absolute;
+   left: 3%;
+   top: 17%;
+}
+.courses > img:nth-child(2) {
+   width: 35px;
+   transform: rotate(90deg);
+   position: absolute;
+   right: 5%;
+   bottom: 0;
+}
+.courses .container {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+   gap: 40px;
+}
+.courses .box {
+    padding: 25px;
+    box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+    border-radius: var(--main-border-radius);
+}
+.courses .box > img {
+   width: 100%;
+}
+.courses .box h3 {
+    margin: 20px 0;
+    line-height: 1.7;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.courses .box p {
+   font-size: 15px;
+   line-height: 1.7;
+}
+.courses .box .rating {
+   margin-top: 30px;
+   display: flex;
+   justify-content: space-between;
+}
+.courses .box .rating span {
+   text-transform: capitalize;
+   font-size: 14px;
+}
+.courses a {
+   width: fit-content;
+   padding: 20px 45px;
+   display: block;
+   margin: 60px auto 0;
+   border-radius: var(--main-border-radius);
+   text-transform: capitalize;
+   color: white;
+   background-color: #ff9f66;
+}
+/* End Courses */
+/* Start Pricing Plan */
+.pricing {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: #e6f0ee;
+}
+.pricing .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+}
+.pricing .box {
+    background-color: white;
+}
+.pricing .box .first {
+   text-align: center;
+   padding: 40px 0 30px;
+   position: relative;
+}
+.pricing .box .first::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: #e6f0ee;
+}
+.pricing .box .first h3 {
+   font-size: 25px;
+   font-weight: 400;
+   margin-bottom: 25px;
+}
+.pricing .box .first span:nth-of-type(1) {
+    margin-bottom: 25px;
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+}
+.pricing .box .first span:nth-of-type(2) {
+   font-size: 40px;
+}
+.pricing .box .second {
+    padding: 25px 30px 20px;
+}
+.pricing .box .second span {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 33px;
+    font-size: 15px;
+}
+.pricing .box .second ul li {
+   padding: 20px;
+   margin-bottom: 18px;
+   border: 1px solid #e6f0ee;
+   border-radius: var(--main-border-radius);
+}
+.pricing .box .second ul li i {
+   padding: 7px 8px;
+   margin-right: 20px;
+   border-radius: 50%;
+   color: #258675;
+   background-color: #d4eee9;
+}
+.pricing .box .second a {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 40px;
+   height: 55px;
+   text-align: center;
+   border: 1px solid #ff9f66;
+   border-top-left-radius: var(--main-border-radius);
+   border-bottom-left-radius: var(--main-border-radius);
+   position: relative;
+   color: #ff9f66;
+}
+.pricing .box .second a i {
+    padding: 17px;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ff9f66;
+    color: white;
+}
+.pricing .box:nth-child(2) .first {
+    color: white;
+    background-color: #ff9f66;
+}
+/* End Pricing Plan */
